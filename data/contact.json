@@ -1,0 +1,18 @@
+{
+    "data": {
+      "id": "", // ObjectID: Globally unique ID for contact
+      "district": "", // ObjectID: Globally unique and stable ID for contact district
+      "name": "", // String: Name provided by district
+      "type": "", // String: Contact type
+      "students": [ // List of ObjectIDs: List of students associated with contact
+        "",
+        ""
+      ],
+      "sis_id": "", // String: Internal identifier for contact assigned by SIS
+      "email": "", // String: Email address
+      "phone": "", // String: Contact phone number
+      "phone_type": "", // String: Phone number type
+      "relationship": "" // String: Contact relationship
+    },
+    "uri": "/v2.0/contacts/id"
+  }

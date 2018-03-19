@@ -1,0 +1,28 @@
+{
+    "data": {
+      "id": "", // ObjectID: Globally unique and stable ID for school created by Clever
+      "district": "", // ObjectID: Globally unique and stable ID for school's district
+      "name": "", // String: Name provided by district
+      "created": "", // Timestamp: Resource creation date
+      "last_modified": "", // Timestamp: Last time resource was updated.
+      "sis_id": "", // String: Internal school identifier from SIS
+      "school_number": "", // String: School identifier used by district or county
+      "state_id": "", // String: State school identifier
+      "nces_id": "", // String: School NCES ID
+      "mdr_number": "", // String: School MDR number
+      "low_grade": "", // String: School's beginning grade level
+      "high_grade": "", // String: School's exit grade level
+      "location": {
+        "zip": "", // String: School's zip code
+        "address": "", // String: School's street address
+        "city": "", // String: School's city
+        "state": "" // String: School's state
+      },
+      "phone": "", // String School's phone number
+      "principal": { 
+        "email": "", // String: School's principal's email address
+        "name": "" // String: School's principal's name
+      },     
+    },
+    "uri": "/v2.0/schools/id"
+  }

@@ -1,0 +1,222 @@
+//contact.json
+{
+    "data": {
+      "id": "", // ObjectID: Globally unique ID for contact
+      "district": "", // ObjectID: Globally unique and stable ID for contact district
+      "name": "", // String: Name provided by district
+      "type": "", // String: Contact type
+      "students": [ // List of ObjectIDs: List of students associated with contact
+        "",
+        ""
+      ],
+      "sis_id": "", // String: Internal identifier for contact assigned by SIS
+      "email": "", // String: Email address
+      "phone": "", // String: Contact phone number
+      "phone_type": "", // String: Phone number type
+      "relationship": "" // String: Contact relationship
+    },
+    "uri": "/v2.0/contacts/id"
+  }
+
+//course.json
+{
+    "data": {
+      "id": "", // ObjectID: Globally unique and stable ID for the course
+      "district": "", // ObjectID: Globally unique and stable ID for the course's district
+      "name": "", // String: name provided by district
+      "number": "" // String: course number provided by district
+    },
+    "uri": "/v2.0/courses/id"
+  }
+
+//district_admin.json
+{
+    "id": "", // ObjectID: Globally unique and stable ID for district admin
+    "district": "", // ObjectID: Globally unique and stable ID for admin's district
+    "name": { 
+      "first": "", // String: First name provided by district
+       "last": "" // String: Last name provided by district
+    },
+    "email": "", // String: Admin's email address
+    "title": "" // String: Title provided by district
+  }
+
+  //district.json
+  {
+    "data": {
+      "id": "", // ObjectID: Globally unique and stable ID for district created by Clever,
+      "name": "", // String: Name provided by district
+      "state": "", // String: District's sync status
+      "last_sync": "", // Timestamp: Last successful sync of district's data
+      "launch_date": "", // Date: When district's users will have access to Instant Login
+      "mdr_number": "", // String: MDR number
+      "nces_id": "", //Federal NCES id for district
+      "error": "", // String: Error state
+      "sis_type": "", // String: Type of SIS district data originates from
+      "pause_start": "", // Date: When district's data will be paused
+      "pause_end": "" // Date: When district's data will be unpaused
+    },
+    "uri": "/v2.0/districts/id/"
+   }
+
+//school_admin.json
+{
+    "data": {
+      "email": "", // String: Admin's email address
+      "name": {
+        "first": "", // String: First name provided by district
+        "last": "" // String: Last name provided by district
+      },
+      "title": "", // String: Title provided by district
+      "district": "", // ObjectID: Globally unique and stable ID for admin's district
+      "schools": [ // List of ObjectIDs: List of schools associated with admin
+        "",
+        ""
+      ],
+      "staff_id": "", // String: Identifier provied by district
+      "id": "" // ObjectID: Globally unique and stable ID for admin
+    },
+    "uri": "/v2.0/school_admins/id"
+  }
+
+//school.json
+{
+    "data": {
+      "id": "", // ObjectID: Globally unique and stable ID for school created by Clever
+      "district": "", // ObjectID: Globally unique and stable ID for school's district
+      "name": "", // String: Name provided by district
+      "created": "", // Timestamp: Resource creation date
+      "last_modified": "", // Timestamp: Last time resource was updated.
+      "sis_id": "", // String: Internal school identifier from SIS
+      "school_number": "", // String: School identifier used by district or county
+      "state_id": "", // String: State school identifier
+      "nces_id": "", // String: School NCES ID
+      "mdr_number": "", // String: School MDR number
+      "low_grade": "", // String: School's beginning grade level
+      "high_grade": "", // String: School's exit grade level
+      "location": {
+        "zip": "", // String: School's zip code
+        "address": "", // String: School's street address
+        "city": "", // String: School's city
+        "state": "" // String: School's state
+      },
+      "phone": "", // String School's phone number
+      "principal": { 
+        "email": "", // String: School's principal's email address
+        "name": "" // String: School's principal's name
+      },     
+    },
+    "uri": "/v2.0/schools/id"
+  }
+
+//section.json
+{
+    "data": {
+      "id": "", // Globally unique and stable ID for the section
+      "district": "", // ObjectID: Globally unique and stable ID for section's district
+      "school": "", // ObjectID: Globally unique and stable ID for section's school
+      "created": "", // Timestamp: Resource initialization date
+      "last_modified": "", // Timestamp: Last time resource was updated
+      "name": "", // String: Name provided by district
+      "sis_id": "", // String: Internal section identifier from SIS
+      "subject": "", // String: Subject associated with section
+      "students": [ // List of ObjectIDs: List of IDs of students enrolled in section
+        "",
+        ""
+      ],
+      "teacher": "", // ObjectID: Globally unique and stable ID for section's primary teacher
+      "teachers": [ // List of ObjectIDs: List of IDs of teachers assocatedw with section
+        "",
+        ""
+      ],
+      "grade": "", // String: Grade associated with section
+      "course": "", // ObjectID: Globally unique and stable ID for section's course
+      "term_id": "", // ObjectID: Globally unique and stable ID for section's term
+      "section_number": "", // String: Section number set by school or district
+      "period": "" // String: Bell schedule information for the section   
+    },
+    "uri": "/v2.0/sections/id"
+  }
+
+//student.json
+{
+    "data": {
+      "id": "", // ObjectID: Globally unique and stable ID for student
+      "district": "", // ObjectID: Globally unique and stable ID for students district
+      "school": "", // ObjectID: Globally unqieu and stable ID for student's primary school
+      "schools": [ // List of ObjectIDs: List of IDs for schools student is associated with
+        "",
+        ""
+      ],
+      "created": "", // Timestamp: Resource initialization date
+      "last_modified": "", // Timestamp: Last time resource was modified
+      "sis_id": "", // String: Internal student identifier from SIS
+      "name": {
+        "last": "", // String: Last name provided by district
+        "middle": "", // String: middle name provided by district
+        "first": "" // String: First name provided by district
+      },    
+      "dob": "", // String: Student birthdate
+      "email": "", // String: Email address provided by district
+      "student_number": "", // String: Student number provided by district
+      "state_id": "", // String: State student identifier
+      "credentials": {
+        "district_username": "" // String: District-specified student username
+      },
+      "gender": "", // String: Student gender 
+      "race": "", // String: Student race
+      "hispanic_ethnicity": "", // Boolean: Student's hispanic/latino ethnicity
+      "location": {
+        "state": "", // String: Student state
+        "zip": "", // String: Student zip
+        "address": "", // String: Student street address
+        "city": "", // String: Student city
+        "lat": "", // String: Student address latitude (Deprecated)
+        "lon": "" // String: Student address longitude (Deprecated)
+      },
+      "graduation_year": "", // String: Graduation year provided by district
+         "grade": "", // String: Student grade
+    },
+    "uri": "/v2.0/students/id"
+  }
+
+//teacher.json
+{
+    "data": {
+      "id": "", // ObjectID: Globally unique and stable ID for teacher
+      "district": "", // ObjectID: Globally unique and stable ID for teacher's district
+      "school": "", // ObjectID: Globally unique and stable ID for teacher's primary school
+       "schools": [ // List of ObjectIDs: List of IDs for all schools teacher is associated with
+        "",
+        ""
+      ],
+      "created": "", // Timestamp: Resource initialization date
+      "last_modified": "", // Timestamp: Last time resource was updated
+      "sis_id": "", // String: Internal teacher identifier from SIS
+      "email": "", // String: Email address provided by district
+      "teacher_number": "", // String: Teacher number provided by district
+      "name": {
+        "first": "", // String: First name provided by district
+        "last": "", // String: Last name provided by district
+        "middle": "" // String: Middle name provided by district
+      },
+      "state_id": "", // String: State teacher identifer
+      "title": "", // String: Title provided by district
+      "credentials": {
+        "district_username": "" // String: District-specified username for teacher
+      },
+    },
+    "uri": "/v2.0/teachers/id"
+  }
+
+//term.json
+{
+    "data": {
+      "id": "", // ObjectID: Globally unique and stable ID for the term
+      "district": "", // ObjectID: Globally unique and stable ID for the term's district
+      "name": "", // String: Name provided by district
+      "start_date": "", // Date: Term's start date
+      "end_date": "" // Date: Term's end date
+    },
+    "uri": "/v2.0/terms/id"
+   }

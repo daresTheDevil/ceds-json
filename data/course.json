@@ -1,0 +1,9 @@
+{
+    "data": {
+      "id": "", // ObjectID: Globally unique and stable ID for the course
+      "district": "", // ObjectID: Globally unique and stable ID for the course's district
+      "name": "", // String: name provided by district
+      "number": "" // String: course number provided by district
+    },
+    "uri": "/v2.0/courses/id"
+  }

@@ -1,0 +1,40 @@
+{
+    "data": {
+      "id": "", // ObjectID: Globally unique and stable ID for student
+      "district": "", // ObjectID: Globally unique and stable ID for students district
+      "school": "", // ObjectID: Globally unqieu and stable ID for student's primary school
+      "schools": [ // List of ObjectIDs: List of IDs for schools student is associated with
+        "",
+        ""
+      ],
+      "created": "", // Timestamp: Resource initialization date
+      "last_modified": "", // Timestamp: Last time resource was modified
+      "sis_id": "", // String: Internal student identifier from SIS
+      "name": {
+        "last": "", // String: Last name provided by district
+        "middle": "", // String: middle name provided by district
+        "first": "" // String: First name provided by district
+      },    
+      "dob": "", // String: Student birthdate
+      "email": "", // String: Email address provided by district
+      "student_number": "", // String: Student number provided by district
+      "state_id": "", // String: State student identifier
+      "credentials": {
+        "district_username": "" // String: District-specified student username
+      },
+      "gender": "", // String: Student gender 
+      "race": "", // String: Student race
+      "hispanic_ethnicity": "", // Boolean: Student's hispanic/latino ethnicity
+      "location": {
+        "state": "", // String: Student state
+        "zip": "", // String: Student zip
+        "address": "", // String: Student street address
+        "city": "", // String: Student city
+        "lat": "", // String: Student address latitude (Deprecated)
+        "lon": "" // String: Student address longitude (Deprecated)
+      },
+      "graduation_year": "", // String: Graduation year provided by district
+         "grade": "", // String: Student grade
+    },
+    "uri": "/v2.0/students/id"
+  }

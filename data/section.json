@@ -1,0 +1,27 @@
+{
+    "data": {
+      "id": "", // Globally unique and stable ID for the section
+      "district": "", // ObjectID: Globally unique and stable ID for section's district
+      "school": "", // ObjectID: Globally unique and stable ID for section's school
+      "created": "", // Timestamp: Resource initialization date
+      "last_modified": "", // Timestamp: Last time resource was updated
+      "name": "", // String: Name provided by district
+      "sis_id": "", // String: Internal section identifier from SIS
+      "subject": "", // String: Subject associated with section
+      "students": [ // List of ObjectIDs: List of IDs of students enrolled in section
+        "",
+        ""
+      ],
+      "teacher": "", // ObjectID: Globally unique and stable ID for section's primary teacher
+      "teachers": [ // List of ObjectIDs: List of IDs of teachers assocatedw with section
+        "",
+        ""
+      ],
+      "grade": "", // String: Grade associated with section
+      "course": "", // ObjectID: Globally unique and stable ID for section's course
+      "term_id": "", // ObjectID: Globally unique and stable ID for section's term
+      "section_number": "", // String: Section number set by school or district
+      "period": "" // String: Bell schedule information for the section   
+    },
+    "uri": "/v2.0/sections/id"
+  }

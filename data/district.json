@@ -1,0 +1,16 @@
+{
+  "data": {
+    "id": "", // ObjectID: Globally unique and stable ID for district created by Clever,
+    "name": "", // String: Name provided by district
+    "state": "", // String: District's sync status
+    "last_sync": "", // Timestamp: Last successful sync of district's data
+    "launch_date": "", // Date: When district's users will have access to Instant Login
+    "mdr_number": "", // String: MDR number
+    "nces_id": "", //Federal NCES id for district
+    "error": "", // String: Error state
+    "sis_type": "", // String: Type of SIS district data originates from
+    "pause_start": "", // Date: When district's data will be paused
+    "pause_end": "" // Date: When district's data will be unpaused
+  },
+  "uri": "/v2.0/districts/id/"
+ }

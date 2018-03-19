@@ -1,0 +1,10 @@
+{
+    "id": "", // ObjectID: Globally unique and stable ID for district admin
+    "district": "", // ObjectID: Globally unique and stable ID for admin's district
+    "name": { 
+      "first": "", // String: First name provided by district
+       "last": "" // String: Last name provided by district
+    },
+    "email": "", // String: Admin's email address
+    "title": "" // String: Title provided by district
+  }

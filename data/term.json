@@ -1,0 +1,10 @@
+{
+    "data": {
+      "id": "", // ObjectID: Globally unique and stable ID for the term
+      "district": "", // ObjectID: Globally unique and stable ID for the term's district
+      "name": "", // String: Name provided by district
+      "start_date": "", // Date: Term's start date
+      "end_date": "" // Date: Term's end date
+    },
+    "uri": "/v2.0/terms/id"
+   }
